@@ -1,0 +1,87 @@
+// -------- SELECT ELEMENTS --------
+const wrapper = document.querySelector(".wrapper");
+const pinBoxes = document.querySelectorAll('.pin-box');
+const buttons = document.querySelectorAll('.heart-pad button');
+const noBtn = document.querySelector('.btn-no');
+const hintButton = document.querySelector('.hint');
+const hintText = document.querySelector('.hint-text');
+
+let pin = [];
+let hintStage = 0;
+// -------- HEART BUTTON / PIN PAD --------
+buttons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    if (pin.length < 4) {
+      pin.push(btn.dataset.num);
+      pinBoxes[pin.length - 1].textContent = btn.dataset.num;
+    }
+  });
+});
+
+// -------- "NO" BUTTON MOVEMENT --------
+if (noBtn) {
+  noBtn.addEventListener('mouseover', () => {
+    const wrapperRect = wrapper.getBoundingClientRect();
+    const noBtnRect = noBtn.getBoundingClientRect();
+
+    const maxX = wrapperRect.width - noBtnRect.width;
+    const maxY = wrapperRect.height - noBtnRect.height;
+
+    const randomX = Math.floor(Math.random() * maxX);
+    const randomY = Math.floor(Math.random() * maxY);
+
+    noBtn.style.position = 'absolute';
+    noBtn.style.left = randomX + "px";
+    noBtn.style.top = randomY + "px";
+  });
+}
+
+// -------- HINT SYSTEM --------
+if (hintButton && hintText) {
+  hintButton.addEventListener('click', () => {
+    if (hintStage === 0) {
+      hintText.textContent = "Type the numbers that spell my nickname in ASCII";
+      hintButton.textContent = "Another hint?";
+      hintStage = 1;
+    } else if (hintStage === 1) {
+      hintText.textContent = "Two letters in ALL CAPS ";
+      hintButton.style.display = "none"; // hide after second hint
+    }
+  });
+}
+
+// -------- PIN VALIDATION --------
+const pinButtons = document.querySelector('.heart-pad button');
+const pinBoxesVal = document.querySelectorAll('.pin-box');
+const hintTextVal = document.querySelector('.hint-text');
+
+let enteredCode = "";
+const correctCode = "7465";
+let hintClicked = false;
+
+// Handle heart button clicks
+buttons.forEach(button => {
+    button.addEventListener("click", () => {
+        if (enteredCode.length < 4) {
+            enteredCode += button.dataset.num;
+            pinBoxes[enteredCode.length - 1].textContent = "•";
+        }
+
+        // If 4 digits entered, check
+        if (enteredCode.length === 4) {
+            if (enteredCode === correctCode) {
+                window.location.href = "next-card.html"; // redirect to your next page/card
+            } else {
+                hintText.textContent = "Incorrect code, try again!";
+                hintText.style.color = "red";
+
+                // Reset after short delay
+                setTimeout(() => {
+                    enteredCode = "";
+                    pinBoxes.forEach(box => box.textContent = "");
+                    hintText.textContent = "";
+                }, 1500);
+            }
+        }
+    });
+});

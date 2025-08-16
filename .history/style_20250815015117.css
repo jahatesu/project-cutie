@@ -1,0 +1,220 @@
+:root{
+    --bg1:#e9f5db;
+    --bg2:#90a955;
+    --accent:#b5c99a;
+    --ink:#232323;
+    --splash-duration: 2600ms;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  width: 100%;
+  height:100%;
+}
+
+body {
+.magicpattern {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: repeat;
+  background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 2000 1400%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3Cfilter id=%22b%22 x=%22-200%25%22 y=%22-200%25%22 width=%22500%25%22 height=%22500%25%22%3E%3CfeGaussianBlur in=%22SourceGraphic%22 stdDeviation=%2220%22%2F%3E%3C%2Ffilter%3E%3C%2Fdefs%3E%3Cpath fill=%22%234c5d48%22 d=%22M0 0h2000v1400H0z%22%2F%3E%3Cellipse cx=%222.975%22 cy=%2245.99%22 rx=%221.892%22 ry=%221.88%22 fill=%22%23fff%22 opacity=%22.233%22%2F%3E%3Cellipse cx=%22182.68%22 cy=%22150.208%22 rx=%221.883%22 ry=%221.73%22 fill=%22%23fff%22 opacity=%22.816%22%2F%3E%3Cellipse cx=%22417.486%22 cy=%22172.198%22 rx=%221.717%22 ry=%221.619%22 fill=%22%23fff%22 opacity=%22.52%22%2F%3E%3Cellipse cx=%22478.145%22 cy=%22106.295%22 rx=%221.363%22 ry=%221.121%22 fill=%22%23fff%22 opacity=%22.035%22%2F%3E%3Cellipse cx=%22574.122%22 cy=%2266.124%22 rx=%221.273%22 ry=%221.056%22 fill=%22%23fff%22 opacity=%22-.092%22%2F%3E%3Cellipse cx=%22780.727%22 cy=%22152.814%22 rx=%221.236%22 ry=%221.106%22 fill=%22%23fff%22 opacity=%22.365%22%2F%3E%3Cellipse cx=%22869.229%22 cy=%2270.664%22 rx=%222.127%22 ry=%221.981%22 fill=%22%23fff%22 opacity=%22-.007%22%2F%3E%3Cellipse cx=%221103.307%22 cy=%2263.024%22 rx=%221.109%22 ry=%221.033%22 fill=%22%23fff%22 opacity=%22.378%22%2F%3E%3Cellipse cx=%221230.899%22 cy=%22159.45%22 rx=%221.412%22 ry=%221.047%22 fill=%22%23fff%22 opacity=%22.759%22%2F%3E%3Cellipse cx=%221315.758%22 cy=%2267.956%22 rx=%221.451%22 ry=%221.004%22 fill=%22%23fff%22 opacity=%22.762%22%2F%3E%3Cellipse cx=%221535.098%22 cy=%22106.629%22 rx=%221.189%22 ry=%221.126%22 fill=%22%23fff%22 opacity=%22.531%22%2F%3E%3Cellipse cx=%221576.061%22 cy=%22179.074%22 rx=%221.939%22 ry=%221.654%22 fill=%22%23fff%22 opacity=%22-.147%22%2F%3E%3Cellipse cx=%221777.045%22 cy=%22112.759%22 rx=%221.484%22 ry=%221.454%22 fill=%22%23fff%22 opacity=%22.638%22%2F%3E%3Cellipse cx=%221942.564%22 cy=%22110.544%22 rx=%221.805%22 ry=%221.731%22 fill=%22%23fff%22 opacity=%22.443%22%2F%3E%3Cellipse cx=%2234.648%22 cy=%22377.285%22 rx=%221.965%22 ry=%221.81%22 fill=%22%23fff%22 opacity=%22.032%22%2F%3E%3Cellipse cx=%22166.025%22 cy=%22291.379%22 rx=%221.729%22 ry=%221.604%22 fill=%22%23fff%22 opacity=%22.614%22%2F%3E%3Cellipse cx=%22348.032%22 cy=%22315.973%22 rx=%222.162%22 ry=%221.67%22 fill=%22%23fff%22 opacity=%22.646%22%2F%3E%3Cellipse cx=%22505.827%22 cy=%22219.749%22 rx=%221.934%22 ry=%221.677%22 fill=%22%23fff%22 opacity=%22.343%22%2F%3E%3Cellipse cx=%22640.204%22 cy=%22257.936%22 rx=%221.922%22 ry=%221.755%22 fill=%22%23fff%22 opacity=%22.546%22%2F%3E%3Cellipse cx=%22755.412%22 cy=%22258.057%22 rx=%221.822%22 ry=%221.787%22 fill=%22%23fff%22 opacity=%22.767%22%2F%3E%3Cellipse cx=%22894.979%22 cy=%22232.227%22 rx=%221.877%22 ry=%221.686%22 fill=%22%23fff%22 opacity=%22.558%22%2F%3E%3Cellipse cx=%221041.663%22 cy=%22380.611%22 rx=%221.885%22 ry=%221.609%22 fill=%22%23fff%22 opacity=%22.511%22%2F%3E%3Cellipse cx=%221266.959%22 cy=%22269.496%22 rx=%221.665%22 ry=%221.605%22 fill=%22%23fff%22 opacity=%22.021%22%2F%3E%3Cellipse cx=%221374.383%22 cy=%22354.288%22 rx=%221.371%22 ry=%221.319%22 fill=%22%23fff%22 opacity=%22.193%22%2F%3E%3Cellipse cx=%221549.879%22 cy=%22283.231%22 rx=%221.525%22 ry=%221.113%22 fill=%22%23fff%22 opacity=%22.71%22%2F%3E%3Cellipse cx=%221587.141%22 cy=%22240.905%22 rx=%222.057%22 ry=%221.763%22 fill=%22%23fff%22 opacity=%22.554%22%2F%3E%3Cellipse cx=%221851.404%22 cy=%22216.618%22 rx=%221.777%22 ry=%221.553%22 fill=%22%23fff%22 opacity=%22.529%22%2F%3E%3Cellipse cx=%221933.519%22 cy=%22223.63%22 rx=%221.534%22 ry=%221.341%22 fill=%22%23fff%22 opacity=%22.195%22%2F%3E%3Cellipse cx=%22107.428%22 cy=%22526.407%22 rx=%222.02%22 ry=%221.742%22 fill=%22%23fff%22 opacity=%22.166%22%2F%3E%3Cellipse cx=%22209.895%22 cy=%22551.495%22 rx=%221.984%22 ry=%221.899%22 fill=%22%23fff%22 opacity=%22.226%22%2F%3E%3Cellipse cx=%22412.434%22 cy=%22577.353%22 rx=%221.428%22 ry=%221.058%22 fill=%22%23fff%22 opacity=%22.801%22%2F%3E%3Cellipse cx=%22444.737%22 cy=%22535.629%22 rx=%222.101%22 ry=%221.924%22 fill=%22%23fff%22 opacity=%22.681%22%2F%3E%3Cellipse cx=%22662.309%22 cy=%22423.007%22 rx=%221.398%22 ry=%221.33%22 fill=%22%23fff%22 opacity=%22.861%22%2F%3E%3Cellipse cx=%22849.036%22 cy=%22479.675%22 rx=%221.256%22 ry=%221.123%22 fill=%22%23fff%22 opacity=%22.074%22%2F%3E%3Cellipse cx=%22955.012%22 cy=%22410.325%22 rx=%221.391%22 ry=%221.39%22 fill=%22%23fff%22 opacity=%22.556%22%2F%3E%3Cellipse cx=%221007.349%22 cy=%22403.611%22 rx=%222.287%22 ry=%221.845%22 fill=%22%23fff%22 opacity=%22.398%22%2F%3E%3Cellipse cx=%221213.443%22 cy=%22496.884%22 rx=%221.864%22 ry=%221.659%22 fill=%22%23fff%22 opacity=%22.554%22%2F%3E%3Cellipse cx=%221308.221%22 cy=%22478.204%22 rx=%221.679%22 ry=%221.609%22 fill=%22%23fff%22 opacity=%22.725%22%2F%3E%3Cellipse cx=%221540.989%22 cy=%22556.897%22 rx=%221.699%22 ry=%221.655%22 fill=%22%23fff%22 opacity=%22.091%22%2F%3E%3Cellipse cx=%221641.704%22 cy=%22538.564%22 rx=%221.601%22 ry=%221.147%22 fill=%22%23fff%22 opacity=%22.413%22%2F%3E%3Cellipse cx=%221753.915%22 cy=%22474.227%22 rx=%222.161%22 ry=%221.779%22 fill=%22%23fff%22 opacity=%22.326%22%2F%3E%3Cellipse cx=%221875.716%22 cy=%22491.004%22 rx=%221.539%22 ry=%221.525%22 fill=%22%23fff%22 opacity=%22.709%22%2F%3E%3Cellipse cx=%2299.338%22 cy=%22777.82%22 rx=%222.472%22 ry=%221.973%22 fill=%22%23fff%22 opacity=%22.691%22%2F%3E%3Cellipse cx=%22152.345%22 cy=%22624.709%22 rx=%221.048%22 ry=%221.016%22 fill=%22%23fff%22 opacity=%22-.079%22%2F%3E%3Cellipse cx=%22370.374%22 cy=%22771.055%22 rx=%222.045%22 ry=%221.73%22 fill=%22%23fff%22 opacity=%22.926%22%2F%3E%3Cellipse cx=%22481.131%22 cy=%22680.177%22 rx=%221.814%22 ry=%221.339%22 fill=%22%23fff%22 opacity=%22.444%22%2F%3E%3Cellipse cx=%22592.157%22 cy=%22617.133%22 rx=%221.747%22 ry=%221.509%22 fill=%22%23fff%22 opacity=%22.569%22%2F%3E%3Cellipse cx=%22801.265%22 cy=%22696.753%22 rx=%221.959%22 ry=%221.718%22 fill=%22%23fff%22 opacity=%22-.004%22%2F%3E%3Cellipse cx=%22904.807%22 cy=%22735.467%22 rx=%221.904%22 ry=%221.609%22 fill=%22%23fff%22 opacity=%22.276%22%2F%3E%3Cellipse cx=%221049.084%22 cy=%22746.333%22 rx=%221.634%22 ry=%221.491%22 fill=%22%23fff%22 opacity=%22.234%22%2F%3E%3Cellipse cx=%221218.636%22 cy=%22627.886%22 rx=%221.395%22 ry=%221.239%22 fill=%22%23fff%22 opacity=%22.707%22%2F%3E%3Cellipse cx=%221387.517%22 cy=%22670.232%22 rx=%221.222%22 ry=%221.108%22 fill=%22%23fff%22 opacity=%22-.282%22%2F%3E%3Cellipse cx=%221515.553%22 cy=%22708.267%22 rx=%221.924%22 ry=%221.919%22 fill=%22%23fff%22 opacity=%22.679%22%2F%3E%3Cellipse cx=%221648.204%22 cy=%22715.636%22 rx=%221.727%22 ry=%221.359%22 fill=%22%23fff%22 opacity=%22.357%22%2F%3E%3Cellipse cx=%221833.254%22 cy=%22725.05%22 rx=%221.481%22 ry=%221.306%22 fill=%22%23fff%22 opacity=%22.352%22%2F%3E%3Cellipse cx=%221872.153%22 cy=%22780.295%22 rx=%221.489%22 ry=%221.251%22 fill=%22%23fff%22 opacity=%22.759%22%2F%3E%3Cellipse cx=%2274.701%22 cy=%22936.861%22 rx=%221.338%22 ry=%221.09%22 fill=%22%23fff%22 opacity=%22.095%22%2F%3E%3Cellipse cx=%22179.031%22 cy=%22812.39%22 rx=%221.175%22 ry=%221.037%22 fill=%22%23fff%22 opacity=%22.577%22%2F%3E%3Cellipse cx=%22392.526%22 cy=%22817.176%22 rx=%221.898%22 ry=%221.54%22 fill=%22%23fff%22 opacity=%22.485%22%2F%3E%3Cellipse cx=%22569.754%22 cy=%22864.766%22 rx=%221.869%22 ry=%221.658%22 fill=%22%23fff%22 opacity=%22.186%22%2F%3E%3Cellipse cx=%22611.081%22 cy=%22831.391%22 rx=%221.406%22 ry=%221.277%22 fill=%22%23fff%22 opacity=%22.739%22%2F%3E%3Cellipse cx=%22733.16%22 cy=%22961.828%22 rx=%221.743%22 ry=%221.261%22 fill=%22%23fff%22 opacity=%22.59%22%2F%3E%3Cellipse cx=%22988.936%22 cy=%22820.974%22 rx=%221.826%22 ry=%221.37%22 fill=%22%23fff%22 opacity=%22.432%22%2F%3E%3Cellipse cx=%221043.603%22 cy=%22980.713%22 rx=%222.127%22 ry=%221.853%22 fill=%22%23fff%22 opacity=%22.576%22%2F%3E%3Cellipse cx=%221212.393%22 cy=%22937.347%22 rx=%221.957%22 ry=%221.704%22 fill=%22%23fff%22 opacity=%22.015%22%2F%3E%3Cellipse cx=%221398.023%22 cy=%22952.975%22 rx=%221.993%22 ry=%221.756%22 fill=%22%23fff%22 opacity=%22.512%22%2F%3E%3Cellipse cx=%221534.173%22 cy=%22808.889%22 rx=%222.216%22 ry=%221.985%22 fill=%22%23fff%22 opacity=%22.812%22%2F%3E%3Cellipse cx=%221684.023%22 cy=%22873.338%22 rx=%221.635%22 ry=%221.149%22 fill=%22%23fff%22 opacity=%22-.233%22%2F%3E%3Cellipse cx=%221758.987%22 cy=%22927.988%22 rx=%221.281%22 ry=%221.019%22 fill=%22%23fff%22 opacity=%22-.131%22%2F%3E%3Cellipse cx=%221929.684%22 cy=%22805.217%22 rx=%221.485%22 ry=%221.425%22 fill=%22%23fff%22 opacity=%22.026%22%2F%3E%3Cellipse cx=%229.166%22 cy=%221127.95%22 rx=%222.044%22 ry=%221.673%22 fill=%22%23fff%22 opacity=%22-.14%22%2F%3E%3Cellipse cx=%22210.308%22 cy=%221007.368%22 rx=%222.085%22 ry=%221.961%22 fill=%22%23fff%22 opacity=%22.811%22%2F%3E%3Cellipse cx=%22396.588%22 cy=%221061.589%22 rx=%221.752%22 ry=%221.709%22 fill=%22%23fff%22 opacity=%22-.024%22%2F%3E%3Cellipse cx=%22545.041%22 cy=%221196.633%22 rx=%221.967%22 ry=%221.62%22 fill=%22%23fff%22 opacity=%22.369%22%2F%3E%3Cellipse cx=%22587.787%22 cy=%221066.493%22 rx=%221.955%22 ry=%221.687%22 fill=%22%23fff%22 opacity=%22.321%22%2F%3E%3Cellipse cx=%22792.697%22 cy=%221072.186%22 rx=%221.581%22 ry=%221.456%22 fill=%22%23fff%22 opacity=%22-.221%22%2F%3E%3Cellipse cx=%22868.19%22 cy=%221122.842%22 rx=%221.949%22 ry=%221.827%22 fill=%22%23fff%22 opacity=%22.232%22%2F%3E%3Cellipse cx=%221013.206%22 cy=%221152.857%22 rx=%221.693%22 ry=%221.196%22 fill=%22%23fff%22 opacity=%22-.162%22%2F%3E%3Cellipse cx=%221266.202%22 cy=%221036.076%22 rx=%221.52%22 ry=%221.249%22 fill=%22%23fff%22 opacity=%22.732%22%2F%3E%3Cellipse cx=%221335.195%22 cy=%221197.414%22 rx=%221.925%22 ry=%221.519%22 fill=%22%23fff%22 opacity=%22.55%22%2F%3E%3Cellipse cx=%221489.755%22 cy=%221141.614%22 rx=%222.157%22 ry=%221.959%22 fill=%22%23fff%22 opacity=%22.918%22%2F%3E%3Cellipse cx=%221662.364%22 cy=%221036.272%22 rx=%222.176%22 ry=%221.851%22 fill=%22%23fff%22 opacity=%22.069%22%2F%3E%3Cellipse cx=%221748.461%22 cy=%221051.218%22 rx=%221.522%22 ry=%221.326%22 fill=%22%23fff%22 opacity=%22.613%22%2F%3E%3Cellipse cx=%221929.301%22 cy=%221123.976%22 rx=%221.479%22 ry=%221.11%22 fill=%22%23fff%22 opacity=%22-.041%22%2F%3E%3Cellipse cx=%224.511%22 cy=%221279.714%22 rx=%221.845%22 ry=%221.377%22 fill=%22%23fff%22 opacity=%22.441%22%2F%3E%3Cellipse cx=%22241.96%22 cy=%221318.364%22 rx=%221.905%22 ry=%221.467%22 fill=%22%23fff%22 opacity=%22.315%22%2F%3E%3Cellipse cx=%22421.844%22 cy=%221273.751%22 rx=%221.855%22 ry=%221.529%22 fill=%22%23fff%22 opacity=%22-.166%22%2F%3E%3Cellipse cx=%22554.923%22 cy=%221373.965%22 rx=%221.442%22 ry=%221.413%22 fill=%22%23fff%22 opacity=%22-.064%22%2F%3E%3Cellipse cx=%22689.785%22 cy=%221379.053%22 rx=%221.813%22 ry=%221.588%22 fill=%22%23fff%22 opacity=%22.848%22%2F%3E%3Cellipse cx=%22843.07%22 cy=%221247.18%22 rx=%221.977%22 ry=%221.968%22 fill=%22%23fff%22 opacity=%22.031%22%2F%3E%3Cellipse cx=%22914.075%22 cy=%221327.756%22 rx=%221.823%22 ry=%221.39%22 fill=%22%23fff%22 opacity=%22.184%22%2F%3E%3Cellipse cx=%221100.401%22 cy=%221318.554%22 rx=%222.01%22 ry=%221.886%22 fill=%22%23fff%22 opacity=%22-.02%22%2F%3E%3Cellipse cx=%221203.405%22 cy=%221247.32%22 rx=%221.881%22 ry=%221.522%22 fill=%22%23fff%22 opacity=%22.561%22%2F%3E%3Cellipse cx=%221332.743%22 cy=%221207.544%22 rx=%222.085%22 ry=%221.684%22 fill=%22%23fff%22 opacity=%22.363%22%2F%3E%3Cellipse cx=%221536.176%22 cy=%221258.702%22 rx=%222.227%22 ry=%221.899%22 fill=%22%23fff%22 opacity=%22.159%22%2F%3E%3Cellipse cx=%221663.688%22 cy=%221333.336%22 rx=%221.888%22 ry=%221.58%22 fill=%22%23fff%22 opacity=%22-.005%22%2F%3E%3Cellipse cx=%221751.432%22 cy=%221207.485%22 rx=%222.077%22 ry=%221.984%22 fill=%22%23fff%22 opacity=%22.088%22%2F%3E%3Cellipse cx=%221963.477%22 cy=%221292.389%22 rx=%221.75%22 ry=%221.264%22 fill=%22%23fff%22 opacity=%22.796%22%2F%3E%3Cg transform=%22rotate(-64.685 481.542 -269.178)%22%3E%3Cdefs%3E%3ClinearGradient id=%22a%22 x1=%220%22 y1=%221%22 x2=%22273.305%22 y2=%221%22 gradientUnits=%22userSpaceOnUse%22%3E%3Cstop stop-color=%22%23fff%22%2F%3E%3Cstop offset=%22.3%22 stop-color=%22%23fff%22 stop-opacity=%22.1%22%2F%3E%3Cstop offset=%22.7%22 stop-color=%22%23fff%22 stop-opacity=%220%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect x=%22-13.665%22 y=%22-10.8%22 width=%22109.322%22 height=%2221.6%22 rx=%2221.6%22 ry=%2221.6%22 fill=%22url(%23a)%22 filter=%22url(%23b)%22 opacity=%22.4%22%2F%3E%3Crect width=%22163.983%22 height=%226.3%22 rx=%226.3%22 ry=%226.3%22 fill=%22url(%23a)%22%2F%3E%3Ccircle cx=%2234.801%22 cy=%22-27.82%22 r=%222.632%22 fill=%22%23fff%22 opacity=%22.591%22%2F%3E%3Ccircle cx=%2268.275%22 cy=%22-9.867%22 r=%222.019%22 fill=%22%23fff%22 opacity=%22.67%22%2F%3E%3Ccircle cx=%2273.386%22 cy=%22-3.355%22 r=%222.012%22 fill=%22%23fff%22 opacity=%22.629%22%2F%3E%3Ccircle cx=%2227.659%22 cy=%2215.088%22 r=%222.782%22 fill=%22%23fff%22 opacity=%22.563%22%2F%3E%3Ccircle cx=%2241.807%22 cy=%22-21.902%22 r=%222.09%22 fill=%22%23fff%22 opacity=%22.454%22%2F%3E%3Ccircle cx=%2252.041%22 cy=%22-5.161%22 r=%221.518%22 fill=%22%23fff%22 opacity=%22.494%22%2F%3E%3Ccircle cx=%2275.487%22 cy=%2214.485%22 r=%222.757%22 fill=%22%23fff%22 opacity=%22.505%22%2F%3E%3C%2Fg%3E%3Cg transform=%22rotate(-63.571 666.244 -620.135)%22%3E%3Crect x=%22-10.848%22 y=%22-10.8%22 width=%2286.781%22 height=%2221.6%22 rx=%2221.6%22 ry=%2221.6%22 fill=%22url(%23a)%22 filter=%22url(%23b)%22 opacity=%22.4%22%2F%3E%3Crect width=%22130.172%22 height=%226.3%22 rx=%226.3%22 ry=%226.3%22 fill=%22url(%23a)%22%2F%3E%3Ccircle cx=%2260.708%22 cy=%22-.353%22 r=%221.949%22 fill=%22%23fff%22 opacity=%22.529%22%2F%3E%3Ccircle cx=%2251.854%22 cy=%22-5.787%22 r=%221.422%22 fill=%22%23fff%22 opacity=%22.51%22%2F%3E%3Ccircle cx=%2237.184%22 cy=%22-25.989%22 r=%222.687%22 fill=%22%23fff%22 opacity=%22.572%22%2F%3E%3Ccircle cx=%2221.779%22 cy=%2218.415%22 r=%221.745%22 fill=%22%23fff%22 opacity=%22.41%22%2F%3E%3Ccircle cx=%2227.758%22 cy=%225.139%22 r=%221.908%22 fill=%22%23fff%22 opacity=%22.69%22%2F%3E%3Ccircle cx=%2230.586%22 cy=%221.826%22 r=%222.084%22 fill=%22%23fff%22 opacity=%22.677%22%2F%3E%3Ccircle cx=%2239.852%22 cy=%22-26.667%22 r=%221.462%22 fill=%22%23fff%22 opacity=%22.552%22%2F%3E%3C%2Fg%3E%3Cg transform=%22rotate(-58.445 966.334 -1146.573)%22%3E%3Crect x=%22-10.998%22 y=%22-10.8%22 width=%2287.988%22 height=%2221.6%22 rx=%2221.6%22 ry=%2221.6%22 fill=%22url(%23a)%22 filter=%22url(%23b)%22 opacity=%22.4%22%2F%3E%3Crect width=%22131.982%22 height=%226.3%22 rx=%226.3%22 ry=%226.3%22 fill=%22url(%23a)%22%2F%3E%3Ccircle cx=%2244.077%22 cy=%2222.37%22 r=%221.138%22 fill=%22%23fff%22 opacity=%22.634%22%2F%3E%3Ccircle cx=%2237.943%22 cy=%2221.522%22 r=%221.614%22 fill=%22%23fff%22 opacity=%22.502%22%2F%3E%3Ccircle cx=%2231.146%22 cy=%2230.244%22 r=%221.44%22 fill=%22%23fff%22 opacity=%22.415%22%2F%3E%3Ccircle cx=%2257.253%22 cy=%2210.643%22 r=%222.973%22 fill=%22%23fff%22 opacity=%22.689%22%2F%3E%3Ccircle cx=%2252.402%22 cy=%2217.94%22 r=%222.595%22 fill=%22%23fff%22 opacity=%22.416%22%2F%3E%3Ccircle cx=%2228.32%22 cy=%2225.542%22 r=%222.047%22 fill=%22%23fff%22 opacity=%22.644%22%2F%3E%3Ccircle cx=%2260.318%22 cy=%2226.426%22 r=%221.483%22 fill=%22%23fff%22 opacity=%22.427%22%2F%3E%3C%2Fg%3E%3Cg transform=%22rotate(-64.01 891.972 -8.438)%22%3E%3Crect x=%22-11.777%22 y=%22-10.8%22 width=%2294.215%22 height=%2221.6%22 rx=%2221.6%22 ry=%2221.6%22 fill=%22url(%23a)%22 filter=%22url(%23b)%22 opacity=%22.4%22%2F%3E%3Crect width=%22141.322%22 height=%226.3%22 rx=%226.3%22 ry=%226.3%22 fill=%22url(%23a)%22%2F%3E%3Ccircle cx=%2234.226%22 cy=%22-12.477%22 r=%221.848%22 fill=%22%23fff%22 opacity=%22.583%22%2F%3E%3Ccircle cx=%2238.709%22 cy=%22-12.596%22 r=%221.315%22 fill=%22%23fff%22 opacity=%22.654%22%2F%3E%3Ccircle cx=%2268.281%22 cy=%22-8.406%22 r=%222.938%22 fill=%22%23fff%22 opacity=%22.455%22%2F%3E%3Ccircle cx=%2264.594%22 cy=%2211.272%22 r=%221.859%22 fill=%22%23fff%22 opacity=%22.422%22%2F%3E%3Ccircle cx=%2253.559%22 cy=%224.432%22 r=%222.29%22 fill=%22%23fff%22 opacity=%22.599%22%2F%3E%3Ccircle cx=%2253.756%22 cy=%22-23.494%22 r=%222.888%22 fill=%22%23fff%22 opacity=%22.508%22%2F%3E%3Ccircle cx=%2257.422%22 cy=%2220.389%22 r=%221.886%22 fill=%22%23fff%22 opacity=%22.468%22%2F%3E%3C%2Fg%3E%3Cg transform=%22rotate(-57.979 1136.58 -211.952)%22%3E%3Crect x=%22-13.085%22 y=%22-10.8%22 width=%22104.68%22 height=%2221.6%22 rx=%2221.6%22 ry=%2221.6%22 fill=%22url(%23a)%22 filter=%22url(%23b)%22 opacity=%22.4%22%2F%3E%3Crect width=%22157.021%22 height=%226.3%22 rx=%226.3%22 ry=%226.3%22 fill=%22url(%23a)%22%2F%3E%3Ccircle cx=%2242.706%22 cy=%2226.556%22 r=%221.42%22 fill=%22%23fff%22 opacity=%22.532%22%2F%3E%3Ccircle cx=%2250.173%22 cy=%222.261%22 r=%221.358%22 fill=%22%23fff%22 opacity=%22.663%22%2F%3E%3Ccircle cx=%2256.367%22 cy=%22-12.914%22 r=%221.436%22 fill=%22%23fff%22 opacity=%22.596%22%2F%3E%3Ccircle cx=%2264.775%22 cy=%2217.739%22 r=%222.227%22 fill=%22%23fff%22 opacity=%22.688%22%2F%3E%3Ccircle cx=%2277.94%22 cy=%22-16.323%22 r=%221.147%22 fill=%22%23fff%22 opacity=%22.424%22%2F%3E%3Ccircle cx=%2247.709%22 cy=%2220.221%22 r=%221.005%22 fill=%22%23fff%22 opacity=%22.639%22%2F%3E%3Ccircle cx=%2269.203%22 cy=%22-9.674%22 r=%221.297%22 fill=%22%23fff%22 opacity=%22.663%22%2F%3E%3C%2Fg%3E%3Cg transform=%22rotate(-60.601 1510.192 -953.716)%22%3E%3Crect x=%22-12.77%22 y=%22-10.8%22 width=%22102.159%22 height=%2221.6%22 rx=%2221.6%22 ry=%2221.6%22 fill=%22url(%23a)%22 filter=%22url(%23b)%22 opacity=%22.4%22%2F%3E%3Crect width=%22153.238%22 height=%226.3%22 rx=%226.3%22 ry=%226.3%22 fill=%22url(%23a)%22%2F%3E%3Ccircle cx=%2236.976%22 cy=%22-15.894%22 r=%221.924%22 fill=%22%23fff%22 opacity=%22.628%22%2F%3E%3Ccircle cx=%2276.53%22 cy=%229.465%22 r=%222.381%22 fill=%22%23fff%22 opacity=%22.606%22%2F%3E%3Ccircle cx=%2261.467%22 cy=%22-29.805%22 r=%222.624%22 fill=%22%23fff%22 opacity=%22.556%22%2F%3E%3Ccircle cx=%2260.789%22 cy=%22-9.647%22 r=%221.802%22 fill=%22%23fff%22 opacity=%22.467%22%2F%3E%3Ccircle cx=%2240.666%22 cy=%2210.076%22 r=%221.657%22 fill=%22%23fff%22 opacity=%22.525%22%2F%3E%3Ccircle cx=%2263.319%22 cy=%22-16.501%22 r=%221.011%22 fill=%22%23fff%22 opacity=%22.426%22%2F%3E%3Ccircle cx=%2260.213%22 cy=%22-23.824%22 r=%222.865%22 fill=%22%23fff%22 opacity=%22.627%22%2F%3E%3C%2Fg%3E%3Cg transform=%22rotate(-64.147 1224.604 378.118)%22%3E%3Crect x=%22-10.77%22 y=%22-10.8%22 width=%2286.163%22 height=%2221.6%22 rx=%2221.6%22 ry=%2221.6%22 fill=%22url(%23a)%22 filter=%22url(%23b)%22 opacity=%22.4%22%2F%3E%3Crect width=%22129.245%22 height=%226.3%22 rx=%226.3%22 ry=%226.3%22 fill=%22url(%23a)%22%2F%3E%3Ccircle cx=%2240.967%22 cy=%22-9.126%22 r=%222.715%22 fill=%22%23fff%22 opacity=%22.545%22%2F%3E%3Ccircle cx=%2225.889%22 cy=%22-25.972%22 r=%222.97%22 fill=%22%23fff%22 opacity=%22.693%22%2F%3E%3Ccircle cx=%2224.314%22 cy=%22-12.953%22 r=%222.838%22 fill=%22%23fff%22 opacity=%22.523%22%2F%3E%3Ccircle cx=%2251.038%22 cy=%22-20.821%22 r=%221.354%22 fill=%22%23fff%22 opacity=%22.512%22%2F%3E%3Ccircle cx=%2250.154%22 cy=%22-.001%22 r=%222.539%22 fill=%22%23fff%22 opacity=%22.507%22%2F%3E%3Ccircle cx=%2222.275%22 cy=%2223.519%22 r=%221.445%22 fill=%22%23fff%22 opacity=%22.649%22%2F%3E%3Ccircle cx=%2238.436%22 cy=%22-17.474%22 r=%221.926%22 fill=%22%23fff%22 opacity=%22.449%22%2F%3E%3C%2Fg%3E%3Cg transform=%22rotate(-63.432 1387.741 -522.715)%22%3E%3Crect x=%22-13.122%22 y=%22-10.8%22 width=%22104.98%22 height=%2221.6%22 rx=%2221.6%22 ry=%2221.6%22 fill=%22url(%23a)%22 filter=%22url(%23b)%22 opacity=%22.4%22%2F%3E%3Crect width=%22157.47%22 height=%226.3%22 rx=%226.3%22 ry=%226.3%22 fill=%22url(%23a)%22%2F%3E%3Ccircle cx=%2227.505%22 cy=%2224.614%22 r=%221.815%22 fill=%22%23fff%22 opacity=%22.513%22%2F%3E%3Ccircle cx=%2276.931%22 cy=%2224.394%22 r=%222.476%22 fill=%22%23fff%22 opacity=%22.442%22%2F%3E%3Ccircle cx=%2266.629%22 cy=%22-12.727%22 r=%221.912%22 fill=%22%23fff%22 opacity=%22.549%22%2F%3E%3Ccircle cx=%2255.66%22 cy=%22-2.615%22 r=%221.578%22 fill=%22%23fff%22 opacity=%22.511%22%2F%3E%3Ccircle cx=%2248.027%22 cy=%22-31.281%22 r=%221.177%22 fill=%22%23fff%22 opacity=%22.623%22%2F%3E%3Ccircle cx=%2236.711%22 cy=%22-19.336%22 r=%222.421%22 fill=%22%23fff%22 opacity=%22.51%22%2F%3E%3Ccircle cx=%2277.834%22 cy=%22-13.663%22 r=%222.784%22 fill=%22%23fff%22 opacity=%22.552%22%2F%3E%3C%2Fg%3E%3Cg transform=%22rotate(-62.205 1905.409 -623.986)%22%3E%3Crect x=%22-13.572%22 y=%22-10.8%22 width=%22108.577%22 height=%2221.6%22 rx=%2221.6%22 ry=%2221.6%22 fill=%22url(%23a)%22 filter=%22url(%23b)%22 opacity=%22.4%22%2F%3E%3Crect width=%22162.866%22 height=%226.3%22 rx=%226.3%22 ry=%226.3%22 fill=%22url(%23a)%22%2F%3E%3Ccircle cx=%2278.355%22 cy=%22-23.055%22 r=%221.748%22 fill=%22%23fff%22 opacity=%22.556%22%2F%3E%3Ccircle cx=%2233.337%22 cy=%2231.282%22 r=%221.743%22 fill=%22%23fff%22 opacity=%22.581%22%2F%3E%3Ccircle cx=%2270.369%22 cy=%2225.498%22 r=%222.246%22 fill=%22%23fff%22 opacity=%22.446%22%2F%3E%3Ccircle cx=%2265.8%22 cy=%2221.589%22 r=%222.703%22 fill=%22%23fff%22 opacity=%22.555%22%2F%3E%3Ccircle cx=%2276.962%22 cy=%22-14.533%22 r=%222.663%22 fill=%22%23fff%22 opacity=%22.511%22%2F%3E%3Ccircle cx=%2254.953%22 cy=%22-22.106%22 r=%221.294%22 fill=%22%23fff%22 opacity=%22.472%22%2F%3E%3Ccircle cx=%2262.943%22 cy=%22-20.188%22 r=%221.966%22 fill=%22%23fff%22 opacity=%22.521%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+}
+
+
+}
+
+/* @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+} */
+.wrapper{
+    position: relative;
+    width: 90%;
+    padding: 5%;
+    max-width: 500px;
+    margin: 50px 50px;
+    height: fit-content;
+/*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=225c31&c2=0c1805&gt=r&gd=dtl
+*/
+background: #225C31;
+background: radial-gradient(at left top, #225C31, #0C1805);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3), 0 0 0 5px rgba(255,255,255,0.05) inset;
+    flex-direction: column;
+    text-align: center;
+    outline: 5px solid #97a97c;
+}
+
+.pin-display{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 80%;
+}
+
+.pin-box{
+  width: clamp(30px, 9vw, 40px);
+  height: clamp(30px, 9vw, 50px);
+  border: 3px solid #97a97c;
+  border-radius: 5px;
+  background: rgba(255,255,255,0.3);
+   box-shadow: 0 5px #7a8f63;
+
+   display: flex;           /* center content */
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center */
+
+  font-size: 1.5rem;       /* size of entered number */
+  font-weight: bold;       /* make number bold */
+  color: #081c15;             /* number color */
+  text-align: center;      /* center text */
+}
+
+.heart-pad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  width: 100%;
+  max-width: 300px;
+  justify-items: center;
+  margin: 0 auto;
+}
+
+.heart-pad button {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: none;        /* remove default button background */
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #081c15;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 4px solid transparent; /* outline for focus state */
+  transition: outline-color 0.3s ease;
+}
+
+
+.heart-pad i {
+  position: absolute;      /* behind the number */
+  font-size: 3.5rem;         /* heart size */
+  color: #b5c99a;
+  z-index: 0;
+}
+
+.heart-pad button span {
+  position: relative;
+  z-index: 1;              /* number above the heart */
+  font-weight: bold;
+}
+
+h2{
+    font-size: 2em;
+    color: #e9f5db;
+    margin: 15px 0;
+}
+@media (max-width: 600px) {
+  .h2 {
+    font-size: 1.2rem;
+  }
+}
+
+.hint{
+  margin-top: 20px;
+  font-size: 1rem;       /* smaller text */
+  color: #fff;             /* text color */
+  text-align: center;
+  cursor: pointer;         /* clickable style */
+  opacity: 0.8;            /* subtle look */
+  transition: opacity 0.2s;
+}
+
+
+/* .wrapper i {
+  font-size: 50px;
+  margin-bottom: 10px;
+  color: #e9f5db;
+}
+
+i{
+    font-size:7.5em;
+    color: #e9f5db;
+    border: 5px solid transparent;
+}
+
+h2{
+    font-size: 2em;
+    color: #e9f5db;
+    margin: 15px 0;
+}
+@media (max-width: 600px) {
+  .h2 {
+    font-size: 1.2rem;
+  }
+}
+
+.btn-group{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+button {
+    position: absolute;
+    width: 150px;
+    height: inherit;
+    font-size: 1.2em;
+    color: #e9f5db;
+    font-weight: 600;
+    border-radius: 30px;
+    border: 2px solid #4f772d;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+button:nth-child(1){
+    margin-left: -200px;
+    background: #4f772d;
+    color: #b5c99a;
+}
+
+button:nth-child(2){
+    margin-right: -200px;
+    color: #b5c99a;
+}
+
+@media (max-width: 400px) {
+  .question {
+    font-size: 5vw;
+  }
+  button {
+    font-size: 4vw;
+  }
+} */

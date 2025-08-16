@@ -1,0 +1,236 @@
+:root{
+    --bg1:#e9f5db;
+    --bg2:#90a955;
+    --accent:#b5c99a;
+    --ink:#232323;
+    --splash-duration: 2600ms;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  width: 100%;
+  height:100%;
+}
+
+body {
+background-color: #f5f5f5;
+opacity: 1;
+background-image:  radial-gradient(#148f00 1.9000000000000001px, transparent 1.9000000000000001px), radial-gradient(#148f00 1.9000000000000001px, #f5f5f5 1.9000000000000001px);
+background-size: 76px 76px;
+background-position: 0 0,38px 38px;
+
+}
+
+/* @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+} */
+.wrapper{
+    position: relative;
+    width: 90%;
+    padding: 5%;
+    max-width: 500px;
+    margin: 50px 50px;
+    height: fit-content;
+/*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=225c31&c2=0c1805&gt=r&gd=dtl
+*/
+background: #225C31;
+background: radial-gradient(at left top, #225C31, #0C1805);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3), 0 0 0 5px rgba(255,255,255,0.05) inset;
+    flex-direction: column;
+    text-align: center;
+    outline: 5px solid #97a97c;
+}
+
+.pin-display{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 80%;
+}
+
+.pin-box{
+  width: clamp(30px, 9vw, 40px);
+  height: clamp(30px, 9vw, 50px);
+  border: 3px solid #97a97c;
+  border-radius: 5px;
+  background: rgba(255,255,255,0.3);
+   box-shadow: 0 5px #7a8f63;
+
+   display: flex;           /* center content */
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center */
+
+  font-size: 1.5rem;       /* size of entered number */
+  font-weight: bold;       /* make number bold */
+  color: #081c15;             /* number color */
+  text-align: center;      /* center text */
+}
+
+.heart-pad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  width: 100%;
+  max-width: 300px;
+  justify-items: center;
+  margin: 0 auto;
+}
+
+.heart-pad button {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: none;        /* remove default button background */
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #081c15;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 4px solid transparent; /* outline for focus state */
+  transition: outline-color 0.3s ease;
+}
+
+
+.heart-pad i {
+  position: absolute;      /* behind the number */
+  font-size: 3.5rem;         /* heart size */
+  color: #b5c99a;
+  z-index: 0;
+}
+
+.heart-pad button span {
+  position: relative;
+  z-index: 1;              /* number above the heart */
+  font-weight: bold;
+}
+
+h2{
+    font-size: 2em;
+    color: #e9f5db;
+    margin: 15px 0;
+}
+@media (max-width: 600px) {
+  .h2 {
+    font-size: 1.2rem;
+  }
+}
+
+.hint{
+  margin-top: 20px;
+  font-size: 1rem;       /* smaller text */
+  color: #fff;             /* text color */
+  text-align: center;
+  cursor: pointer;         /* clickable style */
+  opacity: 0.8;            /* subtle look */
+  transition: opacity 0.2s;
+}
+
+.pin-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;             /* space between lock and PIN content */
+    justify-content: center;
+    flex-wrap: wrap;        /* responsive wrap on small screens */
+}
+
+.lock{
+    width: 25vh;
+    height: 90px;
+}
+
+.pin-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;             /* space between PIN boxes and heart pad */
+}
+
+
+/* .wrapper i {
+  font-size: 50px;
+  margin-bottom: 10px;
+  color: #e9f5db;
+}
+
+i{
+    font-size:7.5em;
+    color: #e9f5db;
+    border: 5px solid transparent;
+}
+
+h2{
+    font-size: 2em;
+    color: #e9f5db;
+    margin: 15px 0;
+}
+@media (max-width: 600px) {
+  .h2 {
+    font-size: 1.2rem;
+  }
+}
+
+.btn-group{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+button {
+    position: absolute;
+    width: 150px;
+    height: inherit;
+    font-size: 1.2em;
+    color: #e9f5db;
+    font-weight: 600;
+    border-radius: 30px;
+    border: 2px solid #4f772d;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+button:nth-child(1){
+    margin-left: -200px;
+    background: #4f772d;
+    color: #b5c99a;
+}
+
+button:nth-child(2){
+    margin-right: -200px;
+    color: #b5c99a;
+}
+
+@media (max-width: 400px) {
+  .question {
+    font-size: 5vw;
+  }
+  button {
+    font-size: 4vw;
+  }
+} */
