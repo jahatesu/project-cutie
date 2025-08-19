@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="homeStyle.css">
+</head>
+<body>
+    <div id="stars" class="stars"></div>
+    <section id="shooting-stars" class="shooting-stars">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </section>
+<section id="parallax" class="parallax">
+    <img src="moon.png" id="moon" alt="">
+    <img src="mountain.png" id="mountain" alt="">
+    <img src="front.png" id="front" alt="">
+    <img src="us.png" id="front" alt="">
+    <!-- <h2 id="text">All for you</h2> -->
+</section>
+<div class="sec" id="sec">
+    <h2>Listen to me!</h2>
+    <section class="vinyl-section">
+        <audio id="audioPlayer" preload="auto" loop>
+            <source src="audio.mp3" type="audio/mpeg">
+        </audio>
+
+        <div class="player">
+            <div class="record" id="record">
+                <div class="label"></div>
+            </div>
+            <div class="tone-arm" id="toneArm">
+                <div class="control"></div>
+            </div>
+            <button class="btn" id="playBtn">▶</button>
+            <div class="status-light" id="statusLight"></div>
+            <div class="volume-label">VOL</div>
+            <div class="slider-container">
+                <input type="range" class="slider" id="volumeSlider" min="0" max="1" step="0.01" value="0.7">
+            </div>
+        </div>
+
+        <div class="lyrics-section">
+            <div class="lyrics-container">
+                <div class="lyrics-display" id="lyricsDisplay">
+                    <div class="lyric-line" data-time="0">♪ ♪</div>
+                    <div class="lyric-line" data-time="4">Come on, don't leave me, it can't be that easy, babe</div>
+                    <div class="lyric-line" data-time="9.5">If you believe me, I guess I'll get on a plane</div>
+                    <div class="lyric-line" data-time="1">Fly to your city, excited to see your face</div>
+                    <div class="lyric-line" data-time="16">Hold me, console me, and then I'll leave without a trace</div>
+                    <div class="lyric-line" data-time="20">Come on, don't leave me, it can't be that easy, babe</div>
+                    <div class="lyric-line" data-time="24">If you believe me, I guess I'll get on a plane</div>
+                    <div class="lyric-line" data-time="28">Fly to your city, excited to see your face</div>
+                    <div class="lyric-line" data-time="32">Hold me, console me, then I'll leave without a trace</div>
+                    <div class="lyric-line" data-time="36">Come on, don't leave me, it can't be that easy, babe</div>
+                    <div class="lyric-line" data-time="40">If you believe me, I guess I'll get on a plane</div>
+                    <div class="lyric-line" data-time="44">Fly to your city, excited to see your face</div>
+                    <div class="lyric-line" data-time="48">Hold me, console me, and then I'll leave without a trace</div>
+                    <div class="lyric-line" data-time="52">Come on, don't leave me, it can't be that easy, babe</div>
+                    <div class="lyric-line" data-time="56">If you believe me, I guess I'll get on a plane</div>
+                    <div class="lyric-line" data-time="60">Fly to your city, excited to see your face</div>
+                    <div class="lyric-line" data-time="64">Hold me, console me, and then I'll leave without a trace</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+    </div>
+    <script src="homeScript.js"></script>
+</body>
+</html>
