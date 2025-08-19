@@ -1,0 +1,26 @@
+// -------- PARALLAX --------
+window.addEventListener('scroll', function(){
+  let value = window.scrollY;
+  stars.style.left = value * 0.25 + 'px';
+  moon.style.top = value * 1.05 + 'px';
+  mountain.style.top = value * 0.5 + 'px';
+  front.style.top = value * 0 + 'px';
+  text.style.marginRight = value * 4 + 'px';
+  text.style.marginTop = value * 1.5 + 'px';
+});
+
+const starContainer = document.querySelector('.stars');
+const starCount = 250; // adjust how many stars you want
+
+for (let i = 0; i < starCount; i++) {
+  const star = document.createElement('span');
+
+  // random position (closer to top-middle)
+  star.style.top = Math.random() * 80 + '%';   // only up to 60% height
+  star.style.left = Math.random() * 80 + '%'; // full width
+
+  // random animation delay for natural twinkle
+  star.style.animationDelay = (Math.random() * 6).toFixed(2) + 's';
+
+  starContainer.appendChild(star);
+}

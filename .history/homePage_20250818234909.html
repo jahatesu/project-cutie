@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stellar Journey - Parallax Experience</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Added loading overlay for page load animation -->
+    <div id="loading-overlay" class="loading-overlay">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <p class="loading-text">Loading magical experience...</p>
+        </div>
+    </div>
+
+    <div id="stars" class="stars"></div>
+
+    <section id="shooting-stars" class="shooting-stars">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </section>
+
+    <!-- Added fade-in class for page load animation -->
+    <section id="parallax" class="parallax fade-in">
+        <div class="parallax-gradient"></div>
+        <img src="/placeholder.svg?height=800&width=1200" id="moon" alt="Glowing Moon">
+        <img src="/placeholder.svg?height=800&width=1200" id="mountain" alt="Mountain Silhouette">
+        <img src="/placeholder.svg?height=800&width=1200" id="front" alt="Foreground">
+        <!-- Improved heading text and added proper typography classes -->
+        <h1 id="text" class="main-heading">Stellar Journey</h1>
+    </section>
+
+    <!-- Improved content section with better typography and meaningful text -->
+    <div class="content-section fade-in" id="content">
+        <div class="content-container">
+            <h2 class="section-heading">Explore the Cosmos</h2>
+            <div class="content-text">
+                <p class="lead-paragraph">
+                    Embark on an extraordinary journey through the infinite expanse of space, where countless stars illuminate the darkness and celestial wonders await your discovery. Our cosmic adventure takes you beyond the boundaries of imagination.
+                </p>
+                <p>
+                    From the gentle glow of distant galaxies to the mesmerizing dance of shooting stars across the night sky, every moment in this stellar realm offers a new perspective on the beauty and mystery of our universe. The parallax effect creates an immersive experience that brings you closer to the cosmic phenomena.
+                </p>
+                <p>
+                    As you scroll through this celestial landscape, notice how the moon casts its ethereal light across the mountain peaks, creating silhouettes that frame our earthly perspective of the infinite cosmos above. This is where science meets art, where technology enables us to capture the sublime beauty of space in motion.
+                </p>
+                <p>
+                    The twinkling stars you see are not just points of light, but distant suns, each potentially harboring worlds of their own. This interactive experience reminds us of our place in the grand tapestry of existence, inspiring wonder and curiosity about what lies beyond our earthly home.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
