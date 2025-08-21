@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="homeStyle.css">
+</head>
+<body>
+    <div id="stars" class="stars"></div>
+    <section id="shooting-stars" class="shooting-stars">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </section>
+<section id="parallax" class="parallax">
+    <img src="moon.png" id="moon" alt="">
+    <img src="mountain.png" id="mountain" alt="">
+    <img src="front.png" id="front" alt="">
+    <img src="us.png" id="front" alt="">
+    <!-- <h2 id="text">All for you</h2> -->
+</section>
+<div class="sec" id="sec">
+    <h2>Listen to me!</h2>
+    <section class="vinyl-section">
+        <audio id="audioPlayer" preload="auto" loop>
+            <source src="audio.mp3" type="audio/mpeg">
+        </audio>
+
+        <div class="player">
+            <div class="record" id="record">
+                <div class="label"></div>
+            </div>
+            <div class="tone-arm" id="toneArm">
+                <div class="control"></div>
+            </div>
+            <button class="btn" id="playBtn">▶</button>
+            <div class="status-light" id="statusLight"></div>
+            <div class="volume-label">VOL</div>
+            <div class="slider-container">
+                <input type="range" class="slider" id="volumeSlider" min="0" max="1" step="0.01" value="0.7">
+            </div>
+        </div>
+
+        <div class="lyrics-section">
+            <div class="lyrics-container">
+                <div class="lyrics-display" id="lyricsDisplay">
+                    <div class="lyric-line" data-time="0">♪ ♪</div>
+                    <div class="lyric-line" data-time="4">Come on, don't leave me, it can't be that easy, babe</div>
+                    <div class="lyric-line" data-time="9.5">If you believe me, I guess I'll get on a plane</div>
+                    <div class="lyric-line" data-time="14">Fly to your city, excited to see your face</div>
+                    <div class="lyric-line" data-time="18">Hold me, console me, and then I'll leave without a trace</div>
+                    <div class="lyric-line" data-time="23">Come on, don't leave me, it can't be that easy, babe</div>
+                    <div class="lyric-line" data-time="28">If you believe me, I guess I'll get on a plane</div>
+                    <div class="lyric-line" data-time="33.5">Fly to your city, excited to see your face</div>
+                    <div class="lyric-line" data-time="37.5">Hold me, console me, then I'll leave without a trace</div>
+                    <div class="lyric-line" data-time="42.5">Come on, don't leave me, it can't be that easy, babe</div>
+                    <div class="lyric-line" data-time="47.5">If you believe me, I guess I'll get on a plane</div>
+                    <div class="lyric-line" data-time="53">Fly to your city, excited to see your face</div>
+                    <div class="lyric-line" data-time="57">Hold me, console me, and then I'll leave without a trace</div>
+                    <div class="lyric-line" data-time="62">Come on, don't leave me, it can't be that easy, babe</div>
+                    <div class="lyric-line" data-time="67">If you believe me, I guess I'll get on a plane</div>
+                    <div class="lyric-line" data-time="72">Fly to your city, excited to see your face</div>
+                    <div class="lyric-line" data-time="77">Hold me, console me, and then I'll leave without a trace</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<section class="ldr-section">
+        <!-- Animated stars background -->
+        <div class="stars" id="stars"></div>
+
+        <!-- Title -->
+        <div class="title">
+            <h1>Love Across Oceans</h1>
+            <p>Philippines ✈️ Canada • Long Distance, Endless Love</p>
+        </div>
+
+        <!-- Map container -->
+        <div class="map-container">
+            <div class="world-map">
+                <!-- Continents -->
+                <div class="continent north-america"></div>
+                <div class="continent asia"></div>
+                <div class="continent europe"></div>
+                <div class="continent africa"></div>
+                <div class="continent south-america"></div>
+                <div class="continent australia"></div>
+
+                <!-- Location markers -->
+                <div class="location-marker philippines">
+                    <div class="marker-pin"></div>
+                </div>
+                <div class="location-marker canada">
+                    <div class="marker-pin"></div>
+                </div>
+
+                <!-- Flight path -->
+                <svg class="flight-path" viewBox="0 0 1200 600">
+                    <path class="path-line" d="M 215 115 Q 400 50 600 150 Q 800 200 950 295" />
+                </svg>
+
+                <!-- Animated plane -->
+                <div class="plane">
+                    <div class="plane-icon"></div>
+                </div>
+
+                <!-- Distance information -->
+                <div class="distance-info">
+                    <h3>11,033 km apart</h3>
+                    <p>But our hearts beat as one ❤️</p>
+                </div>
+
+                <!-- Floating hearts -->
+                <div class="floating-heart heart-1">💕</div>
+                <div class="floating-heart heart-2">💖</div>
+                <div class="floating-heart heart-3">💝</div>
+                <div class="floating-heart heart-4">💗</div>
+            </div>
+        </div>
+    </section>
+    </div>
+    <script src="homeScript.js"></script>
+</body>
+</html>

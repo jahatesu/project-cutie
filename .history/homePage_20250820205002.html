@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="homeStyle.css">
+</head>
+<body>
+    <div id="stars" class="stars"></div>
+    <section id="shooting-stars" class="shooting-stars">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </section>
+<section id="parallax" class="parallax">
+    <img src="moon.png" id="moon" alt="">
+    <img src="mountain.png" id="mountain" alt="">
+    <img src="front.png" id="front" alt="">
+    <img src="us.png" id="front" alt="">
+    <!-- <h2 id="text">All for you</h2> -->
+</section>
+<div class="sec" id="sec">
+    <h2>Listen to me!</h2>
+    <section class="vinyl-section">
+        <audio id="audioPlayer" preload="auto" loop>
+            <source src="audio.mp3" type="audio/mpeg">
+        </audio>
+
+        <div class="player">
+            <div class="record" id="record">
+                <div class="label"></div>
+            </div>
+            <div class="tone-arm" id="toneArm">
+                <div class="control"></div>
+            </div>
+            <button class="btn" id="playBtn">▶</button>
+            <div class="status-light" id="statusLight"></div>
+            <div class="volume-label">VOL</div>
+            <div class="slider-container">
+                <input type="range" class="slider" id="volumeSlider" min="0" max="1" step="0.01" value="0.7">
+            </div>
+        </div>
+
+        <div class="lyrics-section">
+            <div class="lyrics-container">
+                <div class="lyrics-display" id="lyricsDisplay">
+                    <div class="lyric-line" data-time="0">♪ ♪</div>
+                    <div class="lyric-line" data-time="4">Come on, don't leave me, it can't be that easy, babe</div>
+                    <div class="lyric-line" data-time="9.5">If you believe me, I guess I'll get on a plane</div>
+                    <div class="lyric-line" data-time="14">Fly to your city, excited to see your face</div>
+                    <div class="lyric-line" data-time="18">Hold me, console me, and then I'll leave without a trace</div>
+                    <div class="lyric-line" data-time="23">Come on, don't leave me, it can't be that easy, babe</div>
+                    <div class="lyric-line" data-time="28">If you believe me, I guess I'll get on a plane</div>
+                    <div class="lyric-line" data-time="33.5">Fly to your city, excited to see your face</div>
+                    <div class="lyric-line" data-time="37.5">Hold me, console me, then I'll leave without a trace</div>
+                    <div class="lyric-line" data-time="42.5">Come on, don't leave me, it can't be that easy, babe</div>
+                    <div class="lyric-line" data-time="47.5">If you believe me, I guess I'll get on a plane</div>
+                    <div class="lyric-line" data-time="53">Fly to your city, excited to see your face</div>
+                    <div class="lyric-line" data-time="57">Hold me, console me, and then I'll leave without a trace</div>
+                    <div class="lyric-line" data-time="62">Come on, don't leave me, it can't be that easy, babe</div>
+                    <div class="lyric-line" data-time="67">If you believe me, I guess I'll get on a plane</div>
+                    <div class="lyric-line" data-time="72">Fly to your city, excited to see your face</div>
+                    <div class="lyric-line" data-time="77">Hold me, console me, and then I'll leave without a trace</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="container">
+        <!-- Title Section -->
+        <div class="title-section">
+            <h1 class="main-title">Love Knows No Distance</h1>
+            <p class="subtitle">Distance means so little when someone means so much...</p>
+        </div>
+
+        <!-- Map Container -->
+        <div class="map-container">
+            <svg viewBox="0 0 1200 600" class="map-svg" xmlns="http://www.w3.org/2000/svg">
+                <!-- Gradient Definitions -->
+                <defs>
+                    <!-- Country gradients with purple theme -->
+                    <linearGradient id="canadaGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#f3e8ff" />
+                        <stop offset="100%" stop-color="#e9d5ff" />
+                    </linearGradient>
+                    <linearGradient id="philippinesGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#ddd6fe" />
+                        <stop offset="100%" stop-color="#c4b5fd" />
+                    </linearGradient>
+
+                    <!-- Connection line gradient with purple theme -->
+                    <linearGradient id="connectionGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="#8b5cf6" />
+                        <stop offset="50%" stop-color="#a855f7" />
+                        <stop offset="100%" stop-color="#9333ea" />
+                    </linearGradient>
+
+                    <!-- Animated dash pattern -->
+                    <pattern id="dashPattern" patternUnits="userSpaceOnUse" width="20" height="4">
+                        <rect width="10" height="4" fill="url(#connectionGradient)">
+                            <animate attributeName="x" values="0;20" dur="2s" repeatCount="indefinite" />
+                        </rect>
+                    </pattern>
+                </defs>
+
+                <!-- Canada (scaled and positioned in upper-left) -->
+                <g transform="translate(50, 50) scale(0.25)">
+                    <path class="country-canada" d="M641.3 7.6 7.3 1.4 2.4-.5 2.7 3.2 1.6.4 2.7-.6 2 .8 7.3.7 1.5 1.2v1.5l-1.6 3.3-2 3.1-13.7 10-1 1.7 2.6.5 4-.5 3-1 3.6-3.4 1.1-.2 2.3-1.7 4.4-4.6 3.6-2.5 1.5 1 1.4 1.8.9.2.5-1.3.7-3.7.5-1.4 1.1-1 .7.1 1.2 1.8 1.2 4.2L686 25h.6l2.7-3.2 1.4-.5 3 1.2L695 24l.3 1.6-.9 1.6-.5 1.3-.2 1.2.5 1.3 1.8 2.9 2.7 6.1v2.3l-1.5 4.5V48l7-4.8 7 2.1 2 1.5.7 1.7.8 2.9.9 4-.6 4-3 6.4-3.3 4.8-1.8 4.3-2.9 2.4-9.8 10.3-4.8 3.3-2.8 3.2-1.2.5-5.9-.6-1.5 1.8-.9 2.9-1.8 1.4-2.7 1-5.6.8-1.3 3.2-.3 2.3-.5 1.7-.5.8-15.9 11.5-.3 1.9 1.6.7 2-.7 23.2-14 4.4-.9 4.1 1-.4 3.3-5.9 9.2-7.4 8.1-3.7 6.1-9.4 10.4-7.7 10-3 5.1-3.9 9-1.3 2-1.7 1-1.9-.4-1.7-1.3-2.3-3.3-2.2-3.7-.6-.7.4 1.9 4 12.2-.4 2.3-7.5 2.5-3.3 2.1-1.7.6-1.2-.4-1.2.2-1.2.8v1l1 1 3 .7 6.6-2.6 1 .2 1.8 1.3v1.1l-1.7 3.8-5.4 4.5.7.2 1.5 1.6v1.4l-1.7 3.3-.8 1-5.1 3.1-2.3.7-2-.3-9-6.7-3.2-1-3-1.7-2.3.3-2.4 2 1 1 4.5 1.8 3.6.4 1.5.7.6 1.3 1.6 4.4.3 2.3-.4 2.2-.5 1.5-.6.9-.9.4-3.6-.3-1.3.6-1.6 1.2-2 .6-3.4-.3-4.2 1.9-2.2.3-2.4-.8-2.6-2-2.8-1.1-4.7-1 .4 1.3 1.7.5 3.3 3.1 1.6 4.3 1.5.7 3.1 3.5 2.3.5 2.3 1.2 3.3-1.5 2.2.2-.5 8.4-1 .9h-5.3l-2.5-1.3-1-1.2-2.5-1.4-2.2.8-2-.2-1.4.9h-2.1l-5.7 1.3h-3l-2.1-.8-2.6-.3-2.9.3.2 1 1.3.3 1.8 1.5 1.6 2.4 1.4 1 1.6-.5 1.7-1.1 6.2-1.9 2.7-.3 2.4.8 1.6 1 1.1 1.3 1.4 3.2 3.5.4 2.7 1 4.3 4.7 1.2.4.5 1.1-.9 3-.1 1.8-3 3.4-4.6 1-5.1-.3-3.7.4-.4.4 2.6.9 5.8 4 2.2 2 .4 1.3-3.2 4.7-2.8 9.2-1 .7-1 .3-2.4-.2-3.2 2.3-2.4.4-4.3-.8h-5l-.4 1.5-.2 2.8v4.2l.3 5.5-.2 4-.9 2.6-1 1.8-1.9 1.8-1.9 1.1-1.4.4h-2.4l-7 1.3h-3.3l-2.6-.6-2.7-1.8-4.5-5-1.3-1.2-1.2-.6v1l1.4 3 1 1.7 1 .9-.2.8-2 1.4-2.2.6h-2.6v.5l.8 1.5 1.1 1.3.8.4 2-.4 2.3-1.7 1.4-.5 2.9.4 1.1.6 3.6 3.8.5.2 2.6-2h3.8l1.4 1.5.6 3v2.3l-.4 1.8 1 1.8 2.1 1.7 1.7.4 1.2-1 1.8-2.4.8-.5.7.1 1.1 1.7 1.5 3.3.1 3.8-1.2 4.3-1.5 2.9-5.8 4.6-1.8 1.8-1.3 1.8-2 1.7-4 2.3-2.1.4-4.5 2.4h-1l-1.5-.3-.3-1.2.4-2 .5-2 .6-1.8v-1.5l-1.3-2.4-.9-1-.8-.6-1.8.3-1 .7h-1l-1.1-.3-1-1-1.9-4.2-.7-.5-.9.1-.8-.6-.8-1.3-1.2-1.3.3 1 1.3 2.4.8 2.3.5 2.4-.2 1.8-10.4 1-4.4-.5-1-1.6-2-7-.5 12.3-7.8 2-1.8-.4-3-1.3-4-3.3-1.5-2.2-.7-2.2-.4-1.2-.3-.2-1 2.7-1 5.3-2.7-1.4-3.4-1.3-1.2-5.3-.1 7.7-5.5-1-2.6.2-.7-6.7-.2-7.5-1 4.8.4 4 .2 4.8-2.3-1.3-5-.7-1.9-.7.2-6.5.4-6.5 6.6-6.6 1.9-3.1 1.4-1.3 2.2-.8 3-.5 1.9.4 2.2-.4 2.7-1.2 1.9-.3.3-.5-.5-.6-2-4.3-.8-1-.7-.5-1.5-.2-1.4-2-.9-1.6-.9-2.4-1.4-4.4-1.4-5 .7-2.8 2.4-2.2 2.3-1.5 2.3-.8h2l2.3 1.2 3.4 2.3 1.9 2.6 2.4 5.6 1.5 4.4 1.3 2 5.7 3.5 2 .6 2.2-.3 4.6-1 2.2-1 1-1.1.6-1.7.6-1.2 2-3 3.2-6.2 1.7-5 .4-1.6.4-2 .2-2.5-1 1.3-5.3 12.3-1.1 2.2-3.2 3.7-1.3.6-2.2-.2-2.8-1.7-3.4 2.6-2-.6-1.8-1.8V297l-2.3-7 2.5-3.6 2.1-2.2 3.7-5.8h.8l2.7.9-1.4-1.4-1.5-2-3.2.6 1.1-12.8-2.1 9.6-2.2 5-1.4 2.4-1.5 1.5-5.6 1.2 1.4-4.6 1.2-6.9-1.3 2.6-3.2 3.8-2.4 2-2 1.1-3.8-.2-1.9-2 .6-4.7v-5.9l1.1-2.7 1.8-3.6 2-4.8 1.2-5 5-2.3 5-1 4.2-2.7 2-.5 2 1.3 7.8 2.1 3.2 1.6 1.5 1.2 1 .4 1.1-1.7 1.4-1.7 5 .2 1.3-.3 1.2-.8 1.6-1.6 1.8-2.4.2-1.2h-1.2l-1.3.6-1.8 1.8-1.8 1-1.9-.2-3.7-1.5-6.4-.3-3.3-.7-1.6-.7-.8-1-.8-1.5-.6-2 .3-1.4 1.3-.9 1.2-.1 1.8 1 2 2 2.3.2-.8-1.7-2.8-3.5-2-3-1.6-3.6-1.3-3.6-2.8-5.8-2.3-5.8-1.6-2.6-1.7-1.3-5.1-1.6-1-1-2.5-5.2-.7-9-1-5.4 1-7 1.7-3.3 10.3 2.5 4.3-.4 5.6 1 3 1.7 3.4 4.3 3 4.8 3 3.2 2.6 4.3 3 6.4 1.7 3 1.5 1.9 2 1.6 3.8 2 3.3.6 1.8-.2 1.8-1.5 1.3-1.7-1.4-.5-3.9.2-2.6-.9-1.5-2-1.6-2.7-2.6-5.2-2-3.5-4.2-5.6-3.1-5.7-2.5-5.4-.2-2.4 1.8-1.7 2.2-1.1 14-3.8 8.3-4.5 3.3-5.3.4-1.2 11.2-7.6 7.9-2.9 3-.4 2.7-1.2.2-.8-2.4-1-2.5-.6h-5.5l-4.9-.9-1.5-1.7.3-2.8.5-2.4 1.5-4.1 1.6-3.1 6.7-9 4.5-4 1.4-2.6-9.8 6-3.4 4.2-3.4 6.3-1.8 1.9-1.2-.5-1.2.6-1 1.6-.8 3-.7 4.4-.6 3-.5 1.5-1.4 2.2-3.4 4.4-7.8 6-2.6 1.6-2.3.2-7.3 3.4-2.2.1-2.4-1 1-3 3.9-5.3 1-2.5-2.4.6-2.6 1.5-5.5 1.2-2.2 2.2-2.2 4-1.7 2.5-1.3 1-1.8.6-6.5.3-1.4-.3-3.8-3-3.3 1-1.4-.1-2.5-2.2-.8-1.4.2-1.8 1.4-3.6 1.7-3.4 5.5-7.6 3.5-3.6 5.1-3.2 12-3.5.5-2.6-12.1 3-10.3 3.6-1.6 1.3-2.4 3.5-7.6 12.6-2.3 3.2-3.4.7-2.6-1-2-1.6-3.6-3.7-2.6-2-1.3-1.3-.7-1.4-.6-1.6-.5-1.8.9-1.6 6.7-3.3 9.2.6 4.1-.7 4-2 6-5 6.6-7.3 1.2-2.3-2.3-.5-1.8.6-4.2 2.6-6.7 6.9-5.9 2.4-14.4 1.3-4.6 2-2-.5-1.6-1.8-1.7-3.5.3-2.8 3.5-3.2 2.7-.7.5-.6-3.9-3.1-.3-1.6 2.2-3.5 4.8-5.2 2.4-1.7 4.5-1 4.5.5.2-1-4.5-2-3.4-.3-4.5 1.4-11.9 8.5-1-.3-1.7-1.4.5-2.1 6.4-9 .2-1.4-4.6.2-1.3-.5-1.3-1-1.9 1-2.4 2.9-1.7 1.3-1-.5-2.5-3.5.3-3 2-3.7 1.8-2.8 2.5-2.5 4-3.1 3-1 4.8-.1L463 83l2-2.5 2.6-4 2.7-2.8 4.5-2.3 3.8.7 2.1 2 1.7 3.5 1.8 2.7.2-2.2 1.4-2.6 1.9-1.2 2.2.4 2 1.3 2.5 3.2 2 1.4h1l1.3-1.8h3.2V78l-1.1-1.9-1.3-1.3-11.4-9.4-.3-2 3.8-2 2.4-2.3 1.2-.6 2.8-5 1.8-2.6 3.4-3 1.4.8 1.7 2.6L508 53l4.8 1.5 2.1 1.7 3.7 9.2 1.5 3 2.1 3 1.3 1.2 2.5.8.3-1.8-3-4.3-.8-2.5.3-2.1.7-1.2h.9l2.3 1.9 6.2 6.4 9.3 7.5 3.5 1.8 2.2 2.6 2 3.2 2 2.2.4-.2-1.9-5-4.5-6.1L534 65l-4.7-5.7-2.3-4-1.8-3.9v-2.1l1.6-2.6 2.2-2 2.8-.9.3-.8-2.5-3-1.4-2.8v-1.8l3-1.5 1.8.5 3.5 3.3 3 1.6.4-1-3-9-.3-2.1.5-1.2 1-1.2 3.2.7 5.2 4.4 9.3 2.2 2.6-.3-.4-1-3.7-2.8-4-3.7-1.6-2.2-1.3-3-1.5-2.6-.1-1.2 2.4-2 6.3.4 6 3 4.9-1.1 3.1.8 1.3.9 2.2 3.3 7.3 11.8.7 1.9.8 2.8 1 3.7 1.1 1 2.4-2.5 1.6-2.5-.7-2.5-4-5.6-.8-2.4-2-4.2-4.5-7.4-1.2-3.6-.7-3 12.3-2.8 12 2.5 1.9 1.8 1.3 2.4 1.2 3.8 2 3.8 3.8 5.7L613 29l-1-2.5-4.2-6.3-1.8-4.4v-3l.3-2.2.7-1.6 4.6-6.1 6.7-1.9.7.4 5.2 9.3 2.5 3.8 1.7 1.5v-.6l-2.3-4.3-1.8-2.3-.2-1.5 3-4.5 2-1.2 8-1.3 1 .5.7 1.2 2 5 .5.6z" />
+                </g>
+
+                <!-- Philippines (scaled smaller and positioned in lower-right) -->
+                <g transform="translate(750, 300) scale(0.15)">
+                    <path class="country-philippines" d="m652.5 855 2.3 1.6.7.3-1 .8-1.7-.4-1.9 1.1v1.1l1.6 1.8 1-.5 1.2 2.3 2-1-.3-1.2 1.1-.7v1.7l-1.3 1 1.2 2.1 2.5 5.2h-1l3 2.5 5.2-1.7 3.6-3.8 2.8.1-1.2 1.4.5 1.3-1.7 5 .4 3-1.5 4.3 2.2 2.1.6-1.1 2.9 5 2.8 3 1 .3 1.3 1.5.3 1.6-1.5.6 2.5.6-1.3 2.8 2 3-1.4.2.9.8-2 1.5.2 1.6-3.6.8-1.1.7v1.7l-1.9.6v1.5l2.4 1.1-4.2-.1-6 3.4-1.6 2.9 3 2.1-.8 1.3 2.2 2.6 1.4-.1-.2-.8 4.3 1.4.4-.7-2.8-1.3 1.6-.6 3.9.5 2 1.6 1.8-.7 1.7.6 1.2-1.3.7.8-.9 1.4 2.9.2.4 1.7-1 .7 1 1.1-2.5-.3-1 3.2 1.8-.2.5 1.6-1.7 3-2.7.9 1.3 1.6-.8.3.3 1.2 3.3.3 1 1.3-5.5 4.7 2.2 3.2 3.3-1.4 3.6-3.2 1.2.2-2 9.6 1.7 1-2.6 3.3.5 3-1.2.3.7 1.8 2.4-.3-3.1 2.5h-1.4l-2 3.3-.6-6.7-.4-3.7-3.3-1 4.3-4.3-4.8.6-4.4-4.3-2-.2 1.1-3.8 3.7-4.2h1.4v-1.8l-1.7-2.1.9-4.7-1.5 2.2-5.8.3-5.9-.7-2.8-2.7 3.6-4-4.9.5-1.2-7.6-1.8-.1-.2-1.1-.3-4.7 1.7-1.2-.3-.8-3.1-4.7-1.6-5.8-3.6-4-1.5-14.3-3.1-5.5-5.8-6.7-.5-6.6 12.3-12.5v1.4z" />
+                </g>
+
+                <!-- Country Labels -->
+                <text x="200" y="40" text-anchor="middle" class="country-label">🇨🇦 Canada</text>
+                <text x="950" y="580" text-anchor="middle" class="country-label">🇵🇭 Philippines</text>
+
+                <!-- Animated Connection Path -->
+                <path d="M 250 150 Q 600 50 900 450" fill="none" class="connection-line" stroke="url(#dashPattern)" />
+
+                <!-- Animated Airplane -->
+                <g>
+                    <path id="flightPath" d="M 250 150 Q 600 50 900 450" fill="none" />
+                    <g class="airplane-container">
+                        <text text-anchor="middle" dominant-baseline="middle" class="airplane">✈️</text>
+                    </g>
+                </g>
+
+                <!-- Floating Hearts Animation -->
+                <g>
+                    <text x="200" y="300" text-anchor="middle" class="floating-heart" style="animation-delay: 0s;">💜</text>
+                    <text x="300" y="280" text-anchor="middle" class="floating-heart" style="animation-delay: 0.5s;">💜</text>
+                    <text x="400" y="320" text-anchor="middle" class="floating-heart" style="animation-delay: 1s;">💜</text>
+                    <text x="500" y="290" text-anchor="middle" class="floating-heart" style="animation-delay: 1.5s;">💜</text>
+                    <text x="600" y="310" text-anchor="middle" class="floating-heart" style="animation-delay: 2s;">💜</text>
+                    <text x="700" y="300" text-anchor="middle" class="floating-heart" style="animation-delay: 2.5s;">💜</text>
+                    <text x="800" y="330" text-anchor="middle" class="floating-heart" style="animation-delay: 3s;">💜</text>
+                    <text x="900" y="310" text-anchor="middle" class="floating-heart" style="animation-delay: 3.5s;">💜</text>
+                </g>
+
+                <!-- Pulsing Connection Points -->
+                <circle cx="250" cy="150" r="8" fill="#8b5cf6" class="connection-point" />
+                <circle cx="900" cy="450" r="8" fill="#a855f7" class="connection-point-ph" />
+            </svg>
+        </div>
+
+        <!-- Bottom Quote -->
+        <div class="bottom-quote">
+            <p class="quote-text">"True love doesn't know boundaries, distance, or time."</p>
+            <div class="heart-icons">
+                <span class="heart-icon" style="color: #8b5cf6; animation-delay: 0s;">💜</span>
+                <span class="separator">•</span>
+                <span class="heart-icon" style="color: #a855f7; animation-delay: 0.5s;">🌙</span>
+                <span class="separator">•</span>
+                <span class="heart-icon" style="color: #9333ea; animation-delay: 1s;">💜</span>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="homeScript.js"></script>
+</body>
+</html>

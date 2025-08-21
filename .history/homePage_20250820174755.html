@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="homeStyle.css">
+</head>
+<body>
+    <div id="stars" class="stars"></div>
+    <section id="shooting-stars" class="shooting-stars">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </section>
+<section id="parallax" class="parallax">
+    <img src="moon.png" id="moon" alt="">
+    <img src="mountain.png" id="mountain" alt="">
+    <img src="front.png" id="front" alt="">
+    <img src="us.png" id="front" alt="">
+    <!-- <h2 id="text">All for you</h2> -->
+</section>
+<div class="sec" id="sec">
+    <h2>Listen to me!</h2>
+    <section class="vinyl-section">
+        <audio id="audioPlayer" preload="auto" loop>
+            <source src="audio.mp3" type="audio/mpeg">
+        </audio>
+
+        <div class="player">
+            <div class="record" id="record">
+                <div class="label"></div>
+            </div>
+            <div class="tone-arm" id="toneArm">
+                <div class="control"></div>
+            </div>
+            <button class="btn" id="playBtn">▶</button>
+            <div class="status-light" id="statusLight"></div>
+            <div class="volume-label">VOL</div>
+            <div class="slider-container">
+                <input type="range" class="slider" id="volumeSlider" min="0" max="1" step="0.01" value="0.7">
+            </div>
+        </div>
+
+        <div class="lyrics-section">
+            <div class="lyrics-container">
+                <div class="lyrics-display" id="lyricsDisplay">
+                    <div class="lyric-line" data-time="0">♪ ♪</div>
+                    <div class="lyric-line" data-time="4">Come on, don't leave me, it can't be that easy, babe</div>
+                    <div class="lyric-line" data-time="9.5">If you believe me, I guess I'll get on a plane</div>
+                    <div class="lyric-line" data-time="14">Fly to your city, excited to see your face</div>
+                    <div class="lyric-line" data-time="18">Hold me, console me, and then I'll leave without a trace</div>
+                    <div class="lyric-line" data-time="23">Come on, don't leave me, it can't be that easy, babe</div>
+                    <div class="lyric-line" data-time="28">If you believe me, I guess I'll get on a plane</div>
+                    <div class="lyric-line" data-time="33.5">Fly to your city, excited to see your face</div>
+                    <div class="lyric-line" data-time="37.5">Hold me, console me, then I'll leave without a trace</div>
+                    <div class="lyric-line" data-time="42.5">Come on, don't leave me, it can't be that easy, babe</div>
+                    <div class="lyric-line" data-time="47.5">If you believe me, I guess I'll get on a plane</div>
+                    <div class="lyric-line" data-time="53">Fly to your city, excited to see your face</div>
+                    <div class="lyric-line" data-time="57">Hold me, console me, and then I'll leave without a trace</div>
+                    <div class="lyric-line" data-time="62">Come on, don't leave me, it can't be that easy, babe</div>
+                    <div class="lyric-line" data-time="67">If you believe me, I guess I'll get on a plane</div>
+                    <div class="lyric-line" data-time="72">Fly to your city, excited to see your face</div>
+                    <div class="lyric-line" data-time="77">Hold me, console me, and then I'll leave without a trace</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+    <section class="ldr-section">
+        <div class="stars" id="stars"></div>
+        <div class="floating-hearts" id="floatingHearts"></div>
+
+        <div class="ldr-container">
+            <h1 class="ldr-title">Love Across Oceans</h1>
+            <p class="ldr-subtitle">Philippines ❤️ Canada</p>
+
+            <div class="map-container">
+                <svg class="world-map" viewBox="0 0 1000 500">
+                    <!-- Flight path -->
+                    <path class="flight-path" d="M 200 350 Q 500 150 800 200" />
+
+                    <!-- North America (Canada) -->
+                    <path class="continent" d="M 100 80 L 300 60 L 350 120 L 320 180 L 280 200 L 200 220 L 150 200 L 120 150 Z" />
+
+                    <!-- Asia (Philippines area) -->
+                    <path class="continent" d="M 750 180 L 850 160 L 900 200 L 880 250 L 820 280 L 780 260 L 760 220 Z" />
+
+                    <!-- Other continents for context -->
+                    <!-- Europe -->
+                    <path class="continent" d="M 450 120 L 520 110 L 550 140 L 530 170 L 480 180 L 440 160 Z" />
+
+                    <!-- Africa -->
+                    <path class="continent" d="M 480 200 L 550 190 L 580 250 L 570 320 L 520 350 L 480 340 L 460 280 Z" />
+
+                    <!-- South America -->
+                    <path class="continent" d="M 250 280 L 320 270 L 340 320 L 330 380 L 290 420 L 260 400 L 240 350 Z" />
+
+                    <!-- Australia -->
+                    <path class="continent" d="M 750 350 L 850 340 L 880 370 L 860 390 L 780 400 L 740 380 Z" />
+                </svg>
+
+                <!-- Location markers -->
+                <div class="location-marker" id="philippines" style="left: 80%; top: 40%;">
+                    <svg class="heart-marker" viewBox="0 0 24 24">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg>
+                </div>
+
+                <div class="location-marker" id="canada" style="left: 20%; top: 30%;">
+                    <svg class="heart-marker" viewBox="0 0 24 24">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg>
+                </div>
+
+                <!-- Airplane -->
+                <div class="airplane" id="airplane">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="distance-info">
+                <div class="distance-text">Distance between our hearts</div>
+                <div class="distance-number">11,033 km</div>
+                <div class="distance-text">But love knows no boundaries ✈️💕</div>
+            </div>
+        </div>
+    </section>
+    </div>
+    <script src="homeScript.js"></script>
+</body>
+</html>

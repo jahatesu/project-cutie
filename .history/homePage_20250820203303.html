@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="homeStyle.css">
+</head>
+<body>
+    <div id="stars" class="stars"></div>
+    <section id="shooting-stars" class="shooting-stars">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </section>
+<section id="parallax" class="parallax">
+    <img src="moon.png" id="moon" alt="">
+    <img src="mountain.png" id="mountain" alt="">
+    <img src="front.png" id="front" alt="">
+    <img src="us.png" id="front" alt="">
+    <!-- <h2 id="text">All for you</h2> -->
+</section>
+<div class="sec" id="sec">
+    <h2>Listen to me!</h2>
+    <section class="vinyl-section">
+        <audio id="audioPlayer" preload="auto" loop>
+            <source src="audio.mp3" type="audio/mpeg">
+        </audio>
+
+        <div class="player">
+            <div class="record" id="record">
+                <div class="label"></div>
+            </div>
+            <div class="tone-arm" id="toneArm">
+                <div class="control"></div>
+            </div>
+            <button class="btn" id="playBtn">▶</button>
+            <div class="status-light" id="statusLight"></div>
+            <div class="volume-label">VOL</div>
+            <div class="slider-container">
+                <input type="range" class="slider" id="volumeSlider" min="0" max="1" step="0.01" value="0.7">
+            </div>
+        </div>
+
+        <div class="lyrics-section">
+            <div class="lyrics-container">
+                <div class="lyrics-display" id="lyricsDisplay">
+                    <div class="lyric-line" data-time="0">♪ ♪</div>
+                    <div class="lyric-line" data-time="4">Come on, don't leave me, it can't be that easy, babe</div>
+                    <div class="lyric-line" data-time="9.5">If you believe me, I guess I'll get on a plane</div>
+                    <div class="lyric-line" data-time="14">Fly to your city, excited to see your face</div>
+                    <div class="lyric-line" data-time="18">Hold me, console me, and then I'll leave without a trace</div>
+                    <div class="lyric-line" data-time="23">Come on, don't leave me, it can't be that easy, babe</div>
+                    <div class="lyric-line" data-time="28">If you believe me, I guess I'll get on a plane</div>
+                    <div class="lyric-line" data-time="33.5">Fly to your city, excited to see your face</div>
+                    <div class="lyric-line" data-time="37.5">Hold me, console me, then I'll leave without a trace</div>
+                    <div class="lyric-line" data-time="42.5">Come on, don't leave me, it can't be that easy, babe</div>
+                    <div class="lyric-line" data-time="47.5">If you believe me, I guess I'll get on a plane</div>
+                    <div class="lyric-line" data-time="53">Fly to your city, excited to see your face</div>
+                    <div class="lyric-line" data-time="57">Hold me, console me, and then I'll leave without a trace</div>
+                    <div class="lyric-line" data-time="62">Come on, don't leave me, it can't be that easy, babe</div>
+                    <div class="lyric-line" data-time="67">If you believe me, I guess I'll get on a plane</div>
+                    <div class="lyric-line" data-time="72">Fly to your city, excited to see your face</div>
+                    <div class="lyric-line" data-time="77">Hold me, console me, and then I'll leave without a trace</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="title">
+            <h1>Love Knows No Distance</h1>
+            <p>Philippines 🇵🇭 ❤️ Canada 🇨🇦</p>
+        </div>
+
+        <div class="map-container">
+            <!-- Floating hearts -->
+            <div class="floating-heart" style="top: 10%; left: 15%;">💕</div>
+            <div class="floating-heart" style="top: 20%; right: 20%; animation-delay: 1s;">💖</div>
+            <div class="floating-heart" style="bottom: 15%; left: 25%; animation-delay: 2s;">💝</div>
+            <div class="floating-heart" style="bottom: 25%; right: 15%; animation-delay: 0.5s;">💗</div>
+
+            <!-- Twinkling stars -->
+            <div class="star" style="top: 5%; left: 10%; animation-delay: 0s;">✨</div>
+            <div class="star" style="top: 15%; right: 10%; animation-delay: 1s;">⭐</div>
+            <div class="star" style="bottom: 10%; left: 20%; animation-delay: 2s;">✨</div>
+            <div class="star" style="bottom: 20%; right: 25%; animation-delay: 1.5s;">⭐</div>
+
+            <svg class="world-map" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
+                <!-- Define the flight path -->
+                <defs>
+                    <path id="flightPath" d="M 150 120 Q 450 80 750 180" />
+                </defs>
+
+                <!-- Canada (positioned in upper left) -->
+                <g transform="translate(50, 50) scale(0.15)">
+                    <path class="country canada" d="M278.2 938h-36.5l.2-.3-.1-.3-.7-.8-.3-.7-.2-.3-1.5-.5-.2-.3v-.3l-.4-.3-.5-.8-.8-.9-.2-.3v-.5l.2-.9v-.3l-.3-.1h-.7l-.3-.3-.2-.2v-.2l.5-.6.4-1.2v-1l-.4-1.8v-.3l.3-.4v-.5l-.2-.6-.4-1-.7-3.1-1.8-2.7-.5-.4-.4-.1h-.3l-.5.4h-.2l-.1-.1-.4-.4-.4-.6v-.9l-.3-.3v-.1h-.5l-.3-.4-1.8-1.4v-.2l.4-.6-.1-.4-.2-.4-1.6-1.5-1.3-.4-.5-.4-.1-.3-.2-1v-.2h-.2l-.7-.5-.4-.4-.7-.4-.2-.3-.3-1.5-.6-.7-.3-.7-.4-.4-.4-.6-.6-.5-.6-1.6-.4-.4-.4-.2-.3.2-.3.3-.2.2v.5h-.9l-.2-.2-1-2.2-.3-.6-1.5-1.7-.6-1.6h-.3l-.3.1h-1.8l-1.5-.9-.3-.3-.3-.6.7-1.2v-.4l-.2-.2-1.1-.5-1-.8-.3.2-.1.6-.2.2-1.2.4h-.2l-.2-.3v-.5l.1-.6-.3-.5-.2-.7-.6-.9.3-.7-.1-.5-.3-.5-.4-.6-.2-.8-.4-.6-.2-.2h-1l-.2-.3-.3-1-.1-.7-.5-.5-.3-.1v-.9l-.3-.4-1-.9-.7-.4-.3.5v1h-.2l-2-1-.4-.5-.8-1.7-.3-.1-1.4-.2-.5.1h-.3l-.4-.5-.9-1.4-.3-.2-.3-.1v-.8l-.3-.6v-.1h1.6l.1-.3-.7-1-.6-.1-.2-.3-.1-.7-.5-.4-.3-.7V767.2h89.7v166.1z"/>
+                </g>
+
+                <!-- Philippines (positioned in lower right, smaller scale) -->
+                <g transform="translate(650, 350) scale(0.08)">
+                    <path class="country philippines" d="m652.5 855 2.3 1.6.7.3-1 .8-1.7-.4-1.9 1.1v1.1l1.6 1.8 1-.5 1.2 2.3 2-1-.3-1.2 1.1-.7v1.7l-1.3 1 1.2 2.1 2.5 5.2h-1l3 2.5 5.2-1.7 3.6-3.8 2.8.1-1.2 1.4.5 1.3-1.7 5 .4 3-1.5 4.3 2.2 2.1.6-1.1 2.9 5 2.8 3 1 .3 1.3 1.5.3 1.6-1.5.6 2.5.6-1.3 2.8 2 3-1.4.2.9.8-2 1.5.2 1.6-3.6.8-1.1.7v1.7l-1.9.6v1.5l2.4 1.1-4.2-.1-6 3.4-1.6 2.9 3 2.1-.8 1.3 2.2 2.6 1.4-.1-.2-.8 4.3 1.4.4-.7-2.8-1.3 1.6-.6 3.9.5 2 1.6 1.8-.7 1.7.6 1.2-1.3.7.8-.9 1.4 2.9.2.4 1.7-1 .7 1 1.1-2.5-.3-1 3.2 1.8-.2.5 1.6-1.7 3-2.7.9 1.3 1.6-.8.3.3 1.2 3.3.3 1 1.3-5.5 4.7 2.2 3.2 3.3-1.4 3.6-3.2 1.2.2-2 9.6 1.7 1-2.6 3.3.5 3-1.2.3.7 1.8 2.4-.3-3.1 2.5h-1.4l-2 3.3-.6-6.7-.4-3.7-3.3-1 4.3-4.3-4.8.6-4.4-4.3-2-.2 1.1-3.8 3.7-4.2h1.4v-1.8l-1.7-2.1.9-4.7-1.5 2.2-5.8.3-5.9-.7-2.8-2.7 3.6-4-4.9.5-1.2-7.6-1.8-.1-.2-1.1-.3-4.7 1.7-1.2-.3-.8-3.1-4.7-1.6-5.8-3.6-4-1.5-14.3-3.1-5.5-5.8-6.7-.5-6.6 12.3-12.5v1.4z"/>
+                </g>
+
+                <!-- Heart markers -->
+                <g class="heart-marker" transform="translate(140, 110)">
+                    <path d="M12,21.35l-1.45-1.32C5.4,15.36,2,12.28,2,8.5 C2,5.42,4.42,3,7.5,3c1.74,0,3.41,0.81,4.5,2.09C13.09,3.81,14.76,3,16.5,3 C19.58,3,22,5.42,22,8.5c0,3.78-3.4,6.86-8.55,11.54L12,21.35z" transform="scale(0.8)"/>
+                </g>
+
+                <g class="heart-marker" transform="translate(740, 370)">
+                    <path d="M12,21.35l-1.45-1.32C5.4,15.36,2,12.28,2,8.5 C2,5.42,4.42,3,7.5,3c1.74,0,3.41,0.81,4.5,2.09C13.09,3.81,14.76,3,16.5,3 C19.58,3,22,5.42,22,8.5c0,3.78-3.4,6.86-8.55,11.54L12,21.35z" transform="scale(0.8)"/>
+                </g>
+
+                <!-- Connection line -->
+                <path class="connection-line" d="M 150 120 Q 450 80 750 380" />
+
+                <!-- Airplane -->
+                <g class="airplane" id="airplane">
+                    <path d="M2,12 L7,7 L22,7 L22,10 L7,10 L2,15 L2,12 Z M7,5 L7,2 L10,2 L10,5 L7,5 Z M7,17 L7,20 L10,20 L10,17 L7,17 Z" transform="scale(0.8) translate(-12, -10)"/>
+                    <animateMotion dur="8s" repeatCount="indefinite" rotate="auto">
+                        <mpath href="#flightPath"/>
+                    </animateMotion>
+                </g>
+
+                <!-- Invisible path for airplane animation -->
+                <path class="airplane-path" id="flightPath" d="M 150 120 Q 450 80 750 380" />
+            </svg>
+
+            <div class="flags">
+                <div class="flag-label">
+                    <span>🇨🇦</span>
+                    <span>Canada</span>
+                </div>
+                <div class="flag-label">
+                    <span>🇵🇭</span>
+                    <span>Philippines</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="distance-info">
+            <h3>11,033 kilometers apart</h3>
+            <p>"Distance means so little when someone means so much..."</p>
+        </div>
+    </div>
+    
+    </div>
+    <script src="homeScript.js"></script>
+</body>
+</html>
